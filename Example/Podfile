@@ -1,6 +1,6 @@
 use_frameworks!
 
-platform :ios, '10.0'
+platform :ios, '11.0'
 
 target 'DPCCKit_Example' do
   pod 'DPCCKit', :path => '../'
@@ -8,6 +8,7 @@ target 'DPCCKit_Example' do
   target 'DPCCKit_Tests' do
     inherit! :search_paths
 
-    
+        pre_install do |installer| Pod::Installer::Xcode::TargetValidator.send(:define_method, :verify_no_static_framework_transitive_dependencies) {}
+    end
   end
 end
