@@ -1,5 +1,4 @@
 import XCTest
-import DPCCKit
 
 class Tests: XCTestCase {
     

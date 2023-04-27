@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DPCCKit'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of DPCCKit.'
+  s.version          = '0.1.3'
+  s.summary          = 'Tool for Screen'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,16 +21,23 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/liwang/DPCCKit'
+  s.homepage         = 'https://github.com/Mr-WaterMelon-China/DPCCKit'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'liwang' => 'liwang@sinocare.com' }
-  s.source           = { :git => 'https://github.com/liwang/DPCCKit.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Mr-WaterMelon-China/DPCCKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+
+  s.pod_target_xcconfig = {
+        'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+    }
+
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'DPCCKit/Classes/**/*'
+
   
   # s.resource_bundles = {
   #   'DPCCKit' => ['DPCCKit/Assets/*.png']
