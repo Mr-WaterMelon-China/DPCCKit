@@ -31,6 +31,7 @@ final class DPCCDeviceController: DPCCBaseController {
     fileprivate func initDeviceUI() {
         view.backgroundColor = .white
         messageHandler.scanDelegate = self
+        print(DPCCApiConfig.h5DeviceApi)
         if let url = URL.init(string: DPCCApiConfig.h5DeviceApi) {
             
             webView.load(URLRequest.init(url: url))

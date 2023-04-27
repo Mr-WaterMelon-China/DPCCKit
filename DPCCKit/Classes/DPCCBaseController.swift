@@ -48,7 +48,6 @@ class DPCCBaseController: UIViewController {
         webView.configuration.userContentController.add(messageHandler, name: DPCCBridgeKey)
         messageHandler.commonDelegate = self
         webView.navigationDelegate = self
-        print("0.1.3")
     }
 
 }

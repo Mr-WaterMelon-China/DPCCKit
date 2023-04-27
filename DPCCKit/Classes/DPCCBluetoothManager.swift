@@ -43,11 +43,6 @@ class DPCCBluetoothManager: NSObject {
         return unwrapShared
     }
     
-    class func auth(appKey: String, bundleId: String) {
-        SDAuthManager.shared().auth(withAppKey: appKey, bundleId: bundleId)
-        let auth = SDAuthManager.shared().authed
-        print(auth)
-    }
     
     private override init() {
         super.init()

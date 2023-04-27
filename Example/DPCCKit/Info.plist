@@ -30,6 +30,10 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>请授权以访问，否则无法正常连接蓝牙获取数据。</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>请授权以访问，否则无法正常连接蓝牙获取数据。</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
