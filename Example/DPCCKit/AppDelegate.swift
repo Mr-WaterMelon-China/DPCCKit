@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import DPCCKit
+import DPCCTool
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {

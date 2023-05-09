@@ -7,7 +7,7 @@
 
 import UIKit
 import WebKit
-import DPCCKit
+import DPCCTool
 
 class TestViewController: UIViewController {
 

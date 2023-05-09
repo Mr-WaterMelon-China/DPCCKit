@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DPCCKit'
-  s.version          = '0.1.4'
+  s.version          = '0.1.7'
   s.summary          = 'Tool for Screen'
 
 # This description is used to generate tags and improve search results.
@@ -28,15 +28,15 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/Mr-WaterMelon-China/DPCCKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.pod_target_xcconfig = {
+   s.pod_target_xcconfig = {
         'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
     }
 
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
-  s.ios.deployment_target = '10.0'
+   s.ios.deployment_target = '12.0'
 
-  s.source_files = 'DPCCKit/Classes/**/*'
+  #s.source_files = 'DPCCKit/Classes/**/*'
 
   
   # s.resource_bundles = {
@@ -45,5 +45,6 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
+   s.vendored_frameworks = 'DPCCKit/Classes/DPCCTool.framework' 
    s.dependency 'SinoSDKFramework'
 end

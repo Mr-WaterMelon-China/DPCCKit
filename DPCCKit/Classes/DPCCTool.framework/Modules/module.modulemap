@@ -1,0 +1,11 @@
+framework module DPCCTool {
+  umbrella header "DPCCTool.h"
+
+  export *
+  module * { export * }
+}
+
+module DPCCTool.Swift {
+  header "DPCCTool-Swift.h"
+  requires objc
+}
